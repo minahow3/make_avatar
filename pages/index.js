@@ -1,29 +1,29 @@
-// pages/index.js
-import fs from "fs";
-import path from "path";
+// 一覧画面
+
 import Link from "next/link";
 
-export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "data", "names.json");
-  const jsonData = fs.readFileSync(filePath, "utf8");
-  const namesList = JSON.parse(jsonData);
+const avatars = [
+  { id: 1, name: "Avatar 1", imageUrl: "/avatars/avatar1.png" },
+  { id: 2, name: "Avatar 2", imageUrl: "/avatars/avatar2.png" },
+];
 
-  return {
-    props: {
-      namesList,
-    },
-  };
-}
-
-export default function Home({ namesList }) {
+export default function Home() {
   return (
     <div>
-      <h1>名前とアイコンの一覧</h1>
+      <h1>Avatar List</h1>
       <ul>
-        {namesList.map((item, index) => (
-          <li key={index}>
-            <Link href={`/${item.name}`}>
-              {item.icon} {item.name}
+        {avatars.map((avatar) => (
+          <li key={avatar.id}>
+            <Link href={`/view/${avatar.id}`}>
+              <a>
+                <img
+                  src={avatar.imageUrl}
+                  alt={avatar.name}
+                  width={50}
+                  height={50}
+                />
+                <p>{avatar.name}</p>
+              </a>
             </Link>
           </li>
         ))}
