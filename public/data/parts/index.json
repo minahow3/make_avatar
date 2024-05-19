@@ -1,0 +1,19 @@
+{
+  "cheeks": ["cheeks1.png", "cheeks2.png"],
+  "eyebrows": ["eyebrows1.png", "eyebrows2.png", "eyebrows3.png"],
+  "eyes": ["eyes1.png", "eyes2.png", "eyes3.png", "eyes4.png"],
+  "face": [
+    "face1.png",
+    "face2.png",
+    "face3.png",
+    "face4.png",
+    "face5.png",
+    "face6.png",
+    "face7.png",
+    "face8.png",
+    "face9.png",
+    "face10.png"
+  ],
+  "mouse": ["mouse1.png", "mouse2.png", "mouse3.png"],
+  "nose": ["nose1.png", "nose2.png", "nose3.png"]
+}

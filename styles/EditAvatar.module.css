@@ -1,0 +1,31 @@
+/* EditAvatar.module.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 0 auto;
+}
+
+.avatar {
+  flex-basis: 50%; /* 幅を50%に指定 */
+
+  display: flex;
+  justify-content: center; /* 子要素を水平方向に中央揃え */
+  align-items: center; /* 子要素を垂直方向に中央揃え */
+}
+
+.part_images {
+  flex-basis: 50%; /* 幅を50%に指定 */
+}
+
+.avatar-editor {
+  margin-bottom: 20px;
+}
+
+.select-part {
+  margin-bottom: 20px;
+}
+
+.partImages > img {
+  width: 10em;
+}
